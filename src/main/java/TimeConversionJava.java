@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
-public class TimeConversion {
+public class TimeConversionJava {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FindTheMedian {
+public class FindTheMedianJava {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<Integer> numArray = new ArrayList<>();

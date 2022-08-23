@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PlusMinus {
+public class PlusMinusJava {
 
     public static void main(String[] args) {
 

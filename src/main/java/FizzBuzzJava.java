@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class FizzBuzz {
+class FizzBuzzJava {
 
     public static void main(String[] args) {
 
