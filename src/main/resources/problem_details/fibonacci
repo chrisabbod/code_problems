@@ -1,10 +1,10 @@
-The Fibonacci numbers are a sequence of numbers where each number after the first two is the sum of the prior two.
-As an illustration, here is a short sequence given starting values of (0,1): Fibonacci series = (0,1,1,2,3,5,8,13).
+The FibonacciJava numbers are a sequence of numbers where each number after the first two is the sum of the prior two.
+As an illustration, here is a short sequence given starting values of (0,1): FibonacciJava series = (0,1,1,2,3,5,8,13).
 
-Given an integer n, calculate the first n numbers in the Fibonacci sequence given starting elements of (0,1).
+Given an integer n, calculate the first n numbers in the FibonacciJava sequence given starting elements of (0,1).
 Return an array of n integers, including the given (0,1) in the sequence.
 
-fibonacci has the following parameter(s): int n - the length of the Fibonacci series to return
-Return: int[n] - an array of n Fibonacci numbers starting with (0,1)
+fibonacci has the following parameter(s): int n - the length of the FibonacciJava series to return
+Return: int[n] - an array of n FibonacciJava numbers starting with (0,1)
 
 Constraints 1 <= n <= 10

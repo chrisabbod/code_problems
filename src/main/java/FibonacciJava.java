@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fibonacci {
+public class FibonacciJava {
     public static void main(String[] args) {
         int fibonacciLength = 10;
 
