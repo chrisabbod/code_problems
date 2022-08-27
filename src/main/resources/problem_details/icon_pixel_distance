@@ -1,0 +1,55 @@
+You are given a device with a touch screen of 1080 pixels in height and 1920 pixels
+in width. The pixels are numbered from 0.
+
+There are N icons on the screen and they are numbered from 0 to N-1. The positions of
+icons are described by arrays A and B. Specifically, for every icon number J,
+(A[J], B[J]) is the icon's position on the screen (using x and y coordinates
+consecutively).
+
+To select an icon, you have to tap the screen within a circular area of radius 20
+pixels, centered on the icon's position. You can assume that there is always at most
+one icon within range of the tap.
+
+For example, if an icon's position is (500, 500), then you can select it by tapping
+the screen at position (505, 510) o r(520, 500), but not at (520, 480).
+
+The devices detected a tap at position (X,Y), Which icon, if any, was selected?
+
+Write a function: fun solution(A: IntArray, B: IntArray, X: Int, Y: Int): Int
+
+that, given two arrays A and B of length N, representing icons' positions, and
+values X and Y, where (X,Y) represents the coordinates of the tap, returns the number
+(index) of the icon that was selected or -1 if no icon was selected.
+
+Examples:
+
+1. Given A = [100, 200, 100], B = [50, 100, 100], X = 100, and Y = 100, your function
+should return 2. The tapped point (100, 100) is also the center of icon 2.
+
+2. Given A = [100, 200, 100], B = [50, 100, 100], X = 100 and Y = 70, your function
+should return 0. The tapped point (100,70) is within range of icon 0.
+
+3. Given A = [100, 200, 100], B = [50, 100, 100], X = 200 and Y = 60, your function
+should return -1 since the tapped point (200, 60) is not within range of any icon.
+
+Assume that:
+- there is at most one icon within tapping range of (X,Y)
+- N is an integer within the range [1..100]
+- each element of array A is an integer within the range [0..1,919]
+- each element of array B is an integer within the range [0..1,079]
+- X is an integer within the range of [0..1,919]
+- Y is an integer within the range of [0..1,079]
+
+/**
+ *
+ * Screen is 1080 x 1920 starting from 0
+ * N icons on screen numbered 0 to N-1
+ * Must tap within 20 pixels of icons center
+ *
+ * 1. Find each icon position and store in variable
+ * 2. store the tap location
+ * 3. Store the max distance for tap to count (20 pixels)
+ * 4. Add the X and Y position of icons
+ * 5. Check all three icons to see if the absolute value of the icon is
+ * 20 or less than absolute value of tap
+ */
