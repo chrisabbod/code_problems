@@ -84,22 +84,29 @@ numerically ascending order is ["1", "2"]. Note that in the last log entry, the 
 with id 2 performed both roles in the transaction. This is counted as one transaction
 for the user.
 
-/**
- * Task
- * Identify users that have a number of transactions over the threshold
- * List of users should be ordered in ascending numeric value
- * If user is on both sides of transaction it counts as 1 transaction
- *
- *
- * Solution:
- *
- * 1. Create Sender array - Parse the first string in the array
- * 2. Create Receiver array - Parse the second string in the array
- * 3. Make threshold array - Parse the third string in the array
- * 4. Compare sender, receiver, and transaction arrays. If sender != receiver
- * and id is not in id array add to id map and initialize at 1 transaction
- * 5. If they are in the array, increment each id
- * 6. Compare threshold number to map
- * 7. Output in ascending order any ids over the threshold
- *
- */
+Sample Case 1
+
+Sample Input
+
+STDIN       Function
+-----       --------
+4       ->  logs[] size n = 4
+9 7 50  ->  logs = ["9 7 50", "22 7 20", "33 7 50", "22 7 30"]
+22 7 20
+33 7 50
+22 7 30
+3
+
+Sample Output
+7
+
+Explanation
+
+ID      Transactions
+--      ------------
+9       1
+7       4
+22      2
+33      1
+
+Only user 7 has 3 or more transactions. The return array is ["7"].
