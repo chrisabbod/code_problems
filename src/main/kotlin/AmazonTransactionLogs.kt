@@ -28,8 +28,8 @@ class AmazonTransactionLogs {
                 count = 1
             }
         }
-        
-        return output.toTypedArray()
+
+        return output.toTypedArray() //Convert mutable list to Array<String>
     }
 }
 
