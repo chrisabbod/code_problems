@@ -17,7 +17,7 @@ class PlusMinus {
                 zero++
             }
         }
-        
+
         println("%,.6f".format(positive / arr.size))
         println("%,.6f".format(negative / arr.size))
         println("%,.6f".format(zero / arr.size))
