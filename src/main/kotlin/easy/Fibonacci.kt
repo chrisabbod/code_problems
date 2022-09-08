@@ -1,3 +1,5 @@
+package easy
+
 class Fibonacci {
 
     fun calculateSequence(num: Int) {

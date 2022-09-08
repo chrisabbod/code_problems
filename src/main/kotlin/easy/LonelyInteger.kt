@@ -1,3 +1,5 @@
+package easy
+
 class LonelyInteger {
 
     fun lonelyinteger(a: Array<Int>): Int {

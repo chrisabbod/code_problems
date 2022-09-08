@@ -1,3 +1,5 @@
+package easy
+
 class MissingInteger {
 
     fun solution(A: IntArray): Int {

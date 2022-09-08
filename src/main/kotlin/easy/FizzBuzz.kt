@@ -1,3 +1,5 @@
+package easy
+
 class FizzBuzz {
 
     fun fizzBuzz(num: Int) {

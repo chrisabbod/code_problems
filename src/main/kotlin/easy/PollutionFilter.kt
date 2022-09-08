@@ -1,3 +1,5 @@
+package easy
+
 class TaskThree {
 
     fun solution(A: IntArray): Int {

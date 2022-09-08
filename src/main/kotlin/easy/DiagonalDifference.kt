@@ -1,4 +1,4 @@
-import java.lang.Math.abs
+package easy
 
 class DiagonalDifference {
 
