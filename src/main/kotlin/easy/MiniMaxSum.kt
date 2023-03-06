@@ -4,16 +4,16 @@ package easy
 class MiniMaxSum {
     companion object {
         fun miniMaxSum(arr: Array<Int>) {
-            val set = arr.map { it.toLong() }
-            val setTotal = set.sum()
-            var min: Long = setTotal
+            var set = arr.map { it.toLong() }
+            val total = set.sum()
+            var min: Long = total
             var max: Long = 0
-            set.forEach { i : Long ->
-                val setPartSum = setTotal - i
-                if(setPartSum > max) max = setPartSum
-                if(setPartSum < min) min = setPartSum
+            arr.forEach {
+                var netValue = total - it
+                if (netValue < min) min = netValue
+                if (netValue > max) max = netValue
             }
-            print("$min $max")
+            println("$min $max")
         }
     }
 }
