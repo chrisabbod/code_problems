@@ -9,10 +9,10 @@ class TaskThree {
         val factories: MutableList<Double> = mutableListOf()
 
         //Convert IntArray to list
-        for (i in A.indices) {
-            factories.add(A[i].toDouble())
+        A.indices.forEach {
+            factories.add(A[it].toDouble())
         }
-
+        
         //Get Total Emissions
         totalEmissions = A.sum().toDouble()
 
